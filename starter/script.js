@@ -88,6 +88,9 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+var randomValue = upperCasedCharacters[Math.floor(Math.random()*upperCasedCharacters.length)]
+console.log(randomValue)
+
 // Function to prompt user for password options
 function getPasswordOptions() {
 
@@ -107,7 +110,8 @@ console.log("You Clicked")
       //c - if correct, store in var password
       //d - if incorrect, prompt again.
   //2 - Prompt if to inclue uppercase/special characters?
-      //a- if true, store in var password
+      //a- if true, call getRandom(upperCase) and store in var password
+      //b- if true, call getRandom(specialCharacters) and stor in var password
   //3 - Validate length is correct and selections have been made
       //a - if true, store in var password
   //4 - Display password to browser
