@@ -102,8 +102,14 @@ function getRandom(arr) {
 function generatePassword() {
 console.log("You Clicked")
   //1 - Prompt for password criteria - 10 - 64 nums
+      //a - Add prompt within getPasswordOptions()
+      //b - Check the length of the answer
+      //c - if correct, store in var password
+      //d - if incorrect, prompt again.
   //2 - Prompt if to inclue uppercase/special characters?
+      //a- if true, store in var password
   //3 - Validate length is correct and selections have been made
+      //a - if true, store in var password
   //4 - Display password to browser
 
   return "Password Will Go Here"
