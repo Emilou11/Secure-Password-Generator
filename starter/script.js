@@ -1,4 +1,4 @@
-// Array of special characters to be included in password
+/* Array of special characters to be included in password
 var specialCharacters = [
   '@',
   '%',
@@ -87,19 +87,34 @@ var upperCasedCharacters = [
   'Y',
   'Z'
 ];
+*/
 
-
-//var characterLength = 8;
+var characterLength = 8;
 var userChoice = [];
 
 
 // Function to prompt user for password options
-function getPasswordOptions() {
- userChoice.push (prompt("Enter a number between 10 and 64", ""));  
-}
+//function getPasswordOptions() {
+// userChoice.push (prompt("Enter a number between 10 and 64", "")); 
+ //} 
 
-getPasswordOptions();
-console.log(userChoice)
+
+//getPasswordOptions();
+//console.log(userChoice)
+
+function getPasswordOptions() {
+  while(true){
+  var input = prompt("Enter a number between 10 and 64", "");
+  userChoice.push(Number(input));
+   }
+  } 
+ 
+ 
+ getPasswordOptions();
+ console.log(userChoice)
+ 
+
+
   
 
  // if (isNaN(characterLength) || characterLength < 8 || characterLength > 64) {
