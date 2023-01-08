@@ -1,4 +1,4 @@
-/* Array of special characters to be included in password
+// Array of special characters to be included in password
 var specialCharacters = [
   '@',
   '%',
@@ -87,89 +87,38 @@ var upperCasedCharacters = [
   'Y',
   'Z'
 ];
-*/
-
-var characterLength = 8;
-var userChoice = [];
-
 
 // Function to prompt user for password options
-//function getPasswordOptions() {
-// userChoice.push (prompt("Enter a number between 10 and 64", "")); 
- //} 
-
-
-//getPasswordOptions();
-//console.log(userChoice)
-
 function getPasswordOptions() {
-  while(true){
-  var input = prompt("Enter a number between 10 and 64", "");
-  userChoice.push(Number(input));
-   }
-  } 
- 
- 
- getPasswordOptions();
- console.log(userChoice)
- 
 
-
-  
-
- // if (isNaN(characterLength) || characterLength < 8 || characterLength > 64) {
-   // alert('Character has to be a Number 8 - 64 Digits. Please try again.');
-   // return false;
- // }
-
-  //if (confirm('Would you like Lowercase letters in your password?')) {
-   // userChoice = userChoice.concat(lowerCasedCharacters)
- // }
-
- // if (confirm('Would you like Uppercase letters in your password?')) {
- //   userChoice = choiceArr.concat(upperCasedCharacters)
-  //}
-
-  //if (confirm('Would you like Special characters in your password?')) {
-    //choiceArr = userChoice.concat(specialCharacters)
-  //}
-
-  //if (confirm('Would you like Numbers in your password?')) {
-    //userChoice = userChoice.concat(numericCharacters)
-  //}
-  //return true;
-//}
+}
 
 // Function for getting a random element from an array
-//function getRandom(arr) {
-  //return arr[Math.floor(Math.random() * arr.length)];
-//}
+function getRandom(arr) {
 
-
+}
 
 // Function to generate password with user input
-//function generatePassword() 
+function generatePassword() {
+console.log("You Clicked")
+  //1 - Prompt for password criteria - 10 - 64 nums
+  //2 - Prompt if to inclue uppercase/special characters?
+  //3 - Validate length is correct and selections have been made
+  //4 - Display password to browser
 
-//var password = '';
-//for(var i = 0; i < characterLength; i++) {
-  //var randomIndex = Math.floor(Math.random() * userArr.length);
-  //password = password + userArr[randomIndex];
-//}
-//return password;
-
-
-
+  return "Password Will Go Here"
+}
 
 // Get references to the #generate element
-  //var generateBtn = document.querySelector('#generate');
+var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
-//function writePassword() {
-  //var password = generatePassword();
- // var passwordText = document.querySelector('#password');
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector('#password');
 
- // passwordText.value = password;
-//}
+  passwordText.value = password;
+}
 
 // Add event listener to generate button
-//generateBtn.addEventListener('click', writePassword);
+generateBtn.addEventListener('click', writePassword);
