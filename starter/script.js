@@ -88,8 +88,7 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-var randomValue = upperCasedCharacters[Math.floor(Math.random()*upperCasedCharacters.length)]
-console.log(randomValue)
+
 
 // Function to prompt user for password options
 function getPasswordOptions() {
@@ -98,8 +97,11 @@ function getPasswordOptions() {
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-
+return arr[Math.floor((Math.random()*arr.length))]
 }
+console.log(getRandom(upperCasedCharacters))
+
+
 
 // Function to generate password with user input
 function generatePassword() {
