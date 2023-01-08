@@ -87,13 +87,19 @@ var upperCasedCharacters = [
   'Y',
   'Z'
 ];
+var userInput = [];
 
-
+//password = prompt("Choose a number between 10 - 64 to be the legth of your password.");
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+  var validInput =
+   prompt("Select criteria for password (you can select more than one) (use space): 1=lowercase 2=uppercase 3=numeric 4=special characters."); {
+    userInput.push(validInput);
+   } console.log(userInput);
+  
 }
+getPasswordOptions()
 
 // Function for getting a random element from an array
 function getRandom(arr) {
