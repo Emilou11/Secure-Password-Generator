@@ -88,18 +88,45 @@ var upperCasedCharacters = [
   'Z'
 ];
 var userInput = [];
+var charLength = 8; 
+var password = [];
 
 //password = prompt("Choose a number between 10 - 64 to be the legth of your password.");
+var userCharInput = //THIS IS WORKING
+  userCharAnswer = prompt("Select criteria for password, how many characters choose a number between 10 & 64? ");
+      while (isNaN(userCharInput) || userCharInput < 10 || userCharInput > 65)  {
+        prompt("TRY AGAIN!");
+        userCharInput = prompt("How many characters you want your password to be?");
+       }
+
+ //password.length = + userCharInput;
+ console.log(userCharAnswer);
+ 
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  var validInput =
-   prompt("Select criteria for password (you can select more than one) (use space): 1=lowercase 2=uppercase 3=numeric 4=special characters."); {
-    userInput.push(validInput);
-   } console.log(userInput);
-  
+  var userLowCaseAnswer =
+  prompt("Select criteria for password, would you like to include lowercase? "); { 
+    if (userInput === true) {
+      userInput.push(userLowCaseAnswer);
+      
+   }
+
+   var userUpAnswer = prompt("Select criteria for password, would you like to include uppercase? "); {
+    if (userInput === true) {
+      userInput.push(userUpAnswer);
+   } 
 }
-getPasswordOptions()
+
+var userSpecAnswer = prompt("Select criteria for password, would you like to include special characters? "); {
+  if (userInput === true) {
+    userInput.push(userSpecAnswer);
+ } 
+  
+  }
+ }
+}
+getPasswordOptions() //THIS IS WORKING
 
 // Function for getting a random element from an array
 function getRandom(arr) {
